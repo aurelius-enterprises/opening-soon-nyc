@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aurelius-enterprises.github.io/opening-soon-nyc/sitemap.xml
