@@ -1,73 +1,117 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>New liquor licence applications in Manhattan this week | Opening Soon NYC</title>
-<meta name="description" content="23 new liquor licence applications in Manhattan this week: restaurants, bars and stores applying to the New York State Liquor Authority, by neighbourhood.">
+<meta name="description" content="35 new liquor licence applications in Manhattan this week: restaurants, bars and stores applying to the New York State Liquor Authority, by neighbourhood.">
 <link rel="canonical" href="https://aurelius-enterprises.github.io/opening-soon-nyc/manhattan.html">
 <link rel="alternate" type="application/atom+xml" title="Opening Soon NYC: licensed venues" href="feed.xml">
-<style>body{font-family:system-ui,sans-serif;max-width:60rem;margin:2rem auto;padding:0 1rem;color:#222}
-table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:.3rem .5rem;border-bottom:1px solid #ddd}
-footer{margin-top:3rem;font-size:.85rem;color:#555}nav a{margin-right:1rem}</style></head>
+<style>:root{--ink:#14122B;--page:#FBF8F3;--card:#FFFFFF;--text:#1D1B2E;--muted:#5A5670;--line:#E7E1D6;
+--zebra:#F6F1E8;--link:#B0204F;--magenta:#E2336B;--amber:#F5A524;--on-ink:#FFFFFF;--on-ink-muted:#C8C3DA;
+--shadow:0 2px 6px rgba(20,18,43,.08),0 8px 24px rgba(20,18,43,.06);
+--manhattan:#B0204F;--brooklyn:#1F5FBF;--queens:#0E7C66;--bronx:#7A1FA2;--staten-island:#B5450B}
+@media (prefers-color-scheme:dark){:root{--page:#17152A;--card:#211E38;--text:#ECE8F5;--muted:#B8B3CC;
+--line:#35314F;--zebra:#1C1A31;--link:#FF7AA2;--ink:#0D0B1E;--shadow:0 2px 8px rgba(0,0,0,.4)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--text);font:1.05rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--link)}a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 16px}
+.prose{max-width:70ch}
+.site-head{background:var(--ink);color:var(--on-ink)}
+.site-head .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;padding-top:8px;padding-bottom:8px}
+.brand{color:var(--on-ink);font-weight:800;font-size:1.15rem;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.brand span{color:var(--amber)}
+nav{display:flex;flex-wrap:wrap;gap:0 4px}
+nav a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px;padding:0 10px;border-radius:8px}
+nav a:hover{background:rgba(255,255,255,.1)}
+.hero{background:var(--ink);color:var(--on-ink);padding:24px 0 40px}
+.hero .wrap{display:grid;gap:24px;align-items:center}
+@media (min-width:760px){.hero .wrap{grid-template-columns:1.2fr 1fr}}
+.hero h1{font-size:clamp(2.2rem,6vw,3rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px}
+.hero p{margin:0 0 8px;color:var(--on-ink-muted)}.hero .promise{color:var(--on-ink);font-size:1.25rem}
+.hero .big{font-size:3rem;font-weight:800;color:var(--amber);line-height:1;font-variant-numeric:tabular-nums}
+.hero svg{width:100%;height:auto;max-width:440px}
+.title-band{background:var(--ink);color:var(--on-ink);padding:16px 0 32px}
+.title-band h1{font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.15;margin:0}
+main{padding:32px 0 48px}
+h2{font-size:1.5rem;line-height:1.25;margin:40px 0 16px}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));padding:0;margin:0;list-style:none}
+.card{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:16px;border-top:8px solid var(--c,var(--magenta))}
+.card a.name{font-weight:700;font-size:1.1rem;display:inline-flex;min-height:44px;align-items:center}
+.card .num{font-size:2.6rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.card .win{color:var(--muted);font-size:.95rem;margin:4px 0 8px}
+.badge{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.85rem;font-weight:700}
+.badge.new{background:var(--amber);color:#14122B}
+.badge.boro{background:var(--c);color:#fff}
+.map{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:16px;max-width:520px}
+.map svg{width:100%;height:auto}.map a:focus-visible path{stroke:var(--amber);stroke-width:4}
+.map text{font:700 15px system-ui,sans-serif;fill:#fff}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px;box-shadow:var(--shadow);background:var(--card);max-height:80vh}
+table{border-collapse:collapse;width:100%;font-size:.98rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{position:sticky;top:0;background:var(--ink);color:var(--on-ink);font-weight:700;white-space:nowrap}
+th a{color:var(--on-ink)}
+tbody tr:nth-child(even){background:var(--zebra)}
+.type{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.type svg{width:20px;height:20px;flex:none}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 10px;white-space:nowrap;background:var(--page)}
+.pricing{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));max-width:44rem}
+.price-card{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:24px;border-top:8px solid var(--magenta)}
+.price-card h3{margin:0 0 8px;font-size:1.2rem}.price-card .amt{font-size:1.8rem;font-weight:800}
+button[disabled]{margin-top:16px;min-height:44px;padding:0 20px;border-radius:999px;border:2px solid var(--muted);
+background:transparent;color:var(--muted);font:inherit;font-weight:700;cursor:not-allowed}
+footer{background:var(--ink);color:var(--on-ink-muted);padding:32px 0;font-size:.95rem}
+footer a{color:var(--on-ink)}footer .key{color:var(--on-ink);font-weight:700;font-size:1.02rem}</style></head>
 <body>
-<header><p><a href="index.html"><strong>Opening Soon NYC</strong></a></p>
-<nav><a href="manhattan.html">Manhattan</a><a href="brooklyn.html">Brooklyn</a><a href="queens.html">Queens</a><a href="bronx.html">Bronx</a><a href="staten-island.html">Staten Island</a><a href="licensed.html">Licensed</a></nav></header>
-<main>
-<h1>New liquor licence applications in Manhattan this week</h1>
-<p>Applications <strong>filed in the last 7 days</strong> (2026-10-16 to 2026-10-22), by filing date. Restaurants, bars and other on-premises venues, plus liquor, wine and grocery stores (off-premises).</p><h2>New or changed since the previous snapshot</h2>
-<table><thead><tr><th>Business</th><th>Segment</th><th>Licence type</th><th>Neighbourhood</th><th>Filed</th></tr></thead>
+<header class="site-head"><div class="wrap"><a class="brand" href="index.html">Opening <span>Soon</span>&nbsp;NYC</a>
+<nav><a href="manhattan.html">Manhattan</a><a href="brooklyn.html">Brooklyn</a><a href="queens.html">Queens</a><a href="bronx.html">Bronx</a><a href="staten-island.html">Staten Island</a><a href="licensed.html">Licensed</a></nav></div></header>
+<section class="title-band"><div class="wrap"><h1>New liquor licence applications in Manhattan this week</h1></div></section>
+<main><div class="wrap">
+<p>Applications <strong>filed in the last 7 days</strong> (2026-10-19 to 2026-10-25), by filing date. Restaurants, bars and other on-premises venues, plus liquor, wine and grocery stores (off-premises).</p><div class="scroll" tabindex="0"><table><thead><tr><th>Business</th><th>Segment</th><th>Licence type</th><th>Neighbourhood</th><th>Filed</th></tr></thead>
 <tbody>
-<tr><td>Cantina Harlem LLC</td><td>on-premises</td><td>Restaurant</td><td>East Harlem</td><td>2026-09-25</td></tr>
-<tr><td>Lafayette One 26 LLC</td><td>on-premises</td><td>Catering Establishment</td><td>Lower East Side</td><td>2026-10-21</td></tr>
-<tr><td>Cavalier</td><td>on-premises</td><td>Restaurant</td><td>Lower Manhattan</td><td>2026-06-24</td></tr>
-<tr><td>Strand Books</td><td>on-premises</td><td>Catering Establishment</td><td>Lower East Side</td><td>2026-07-24</td></tr>
-<tr><td>Kalhar Capital Inc.</td><td>on-premises</td><td>Food &amp; Beverage Business</td><td>Lower East Side</td><td>2026-06-10</td></tr>
-<tr><td>FRAME4 INC</td><td>on-premises</td><td>Food &amp; Beverage Business</td><td>Greenwich Village and Soho</td><td>2026-07-27</td></tr>
-<tr><td>Goody&#x27;s</td><td>on-premises</td><td>Restaurant</td><td>Lower Manhattan</td><td>2025-11-07</td></tr>
-<tr><td>Gambetta 31-AKBOU 06 Inc</td><td>on-premises</td><td>Restaurant</td><td>Upper East Side</td><td>2026-07-24</td></tr>
-<tr><td>Maadu Foods LLC</td><td>on-premises</td><td>Restaurant</td><td>Greenwich Village and Soho</td><td>2026-07-25</td></tr>
-<tr><td>The Caffe Palermo</td><td>on-premises</td><td>Restaurant</td><td>Greenwich Village and Soho</td><td>2026-07-25</td></tr>
-<tr><td>Baby John&#x27;s Pizzeria</td><td>on-premises</td><td>Restaurant</td><td>Greenwich Village and Soho</td><td>2026-07-25</td></tr>
-<tr><td>Tenshou</td><td>on-premises</td><td>Restaurant</td><td>Midtown (building ZIP)</td><td>2026-07-29</td></tr>
-<tr><td>CULINART, INC.</td><td>on-premises</td><td>Catering Establishment</td><td>Upper East Side</td><td>2026-07-29</td></tr>
-<tr><td>CULINART, INC.</td><td>on-premises</td><td>Catering Establishment</td><td>Upper East Side</td><td>2026-07-30</td></tr>
-<tr><td>Cocktail Test Kitchen, CTK</td><td>on-premises</td><td>Food &amp; Beverage Business</td><td>Chelsea and Clinton</td><td>2026-07-25</td></tr>
-<tr><td>Eastside Convenience Corp</td><td>off-premises</td><td>Grocery Store</td><td>Upper East Side</td><td>2026-06-26</td></tr>
-<tr><td>Duane Reade Store #14282</td><td>off-premises</td><td>Grocery Store</td><td>Chelsea and Clinton</td><td>2026-07-26</td></tr>
-<tr><td>Ifood Market Place Corp</td><td>off-premises</td><td>Grocery Store</td><td>Upper East Side</td><td>2026-07-28</td></tr>
-</tbody></table><h2>All recent filings</h2>
-<table><thead><tr><th>Business</th><th>Segment</th><th>Licence type</th><th>Neighbourhood</th><th>Filed</th></tr></thead>
-<tbody>
-<tr><td>Lafayette One 26 LLC</td><td>on-premises</td><td>Catering Establishment</td><td>Lower East Side</td><td>2026-10-21</td></tr>
-<tr><td>WatchHouse Coffee LLC</td><td>on-premises</td><td>Food &amp; Beverage Business</td><td>Greenwich Village and Soho</td><td>2026-10-20</td></tr>
-<tr><td>Slate Cafe</td><td>on-premises</td><td>Restaurant</td><td>Gramercy Park and Murray Hill</td><td>2026-10-20</td></tr>
-<tr><td>Slate Cafe</td><td>on-premises</td><td>Restaurant</td><td>Upper West Side</td><td>2026-10-20</td></tr>
-<tr><td>NoMad Clubhouse</td><td>on-premises</td><td>Catering Establishment</td><td>Gramercy Park and Murray Hill</td><td>2026-10-20</td></tr>
-<tr><td>Little Italy Pizza</td><td>on-premises</td><td>Food &amp; Beverage Business</td><td>Chelsea and Clinton</td><td>2026-10-20</td></tr>
-<tr><td>LANNA CAFE INC</td><td>on-premises</td><td>Restaurant</td><td>Lower East Side</td><td>2026-10-20</td></tr>
-<tr><td>Johnson Pollheimer Hospitality LLC</td><td>on-premises</td><td>Restaurant</td><td>Greenwich Village and Soho</td><td>2026-10-20</td></tr>
-<tr><td>II Moro NYC LLC</td><td>on-premises</td><td>Restaurant</td><td>Upper East Side</td><td>2026-10-20</td></tr>
-<tr><td>Dim Sum Palace</td><td>on-premises</td><td>Restaurant</td><td>Chelsea and Clinton</td><td>2026-10-20</td></tr>
-<tr><td>Dim Sum Palace</td><td>on-premises</td><td>Restaurant</td><td>Chelsea and Clinton</td><td>2026-10-20</td></tr>
-<tr><td>Campai LLC</td><td>on-premises</td><td>Restaurant</td><td>Upper East Side</td><td>2026-10-20</td></tr>
-<tr><td>Bukhara Grill</td><td>on-premises</td><td>Restaurant</td><td>Chelsea and Clinton</td><td>2026-10-20</td></tr>
-<tr><td>Arte Museum New York</td><td>on-premises</td><td>Food &amp; Beverage Business</td><td>Chelsea and Clinton</td><td>2026-10-20</td></tr>
-<tr><td>Uka Omakase</td><td>on-premises</td><td>Restaurant</td><td>Chelsea and Clinton</td><td>2026-10-19</td></tr>
-<tr><td>TSN 46th LLC; TSN 46th Operating LLC; NYCB46 Manager LLC; &amp; Acacia 46 Group Inc.</td><td>on-premises</td><td>Hotel</td><td>Chelsea and Clinton</td><td>2026-10-19</td></tr>
-<tr><td>Szechuan Gourmet</td><td>on-premises</td><td>Restaurant</td><td>Upper West Side</td><td>2026-10-19</td></tr>
-<tr><td>SHREEJI 23 INC</td><td>off-premises</td><td>Grocery Store</td><td>Gramercy Park and Murray Hill</td><td>2026-10-19</td></tr>
-<tr><td>Harlem Shake</td><td>on-premises</td><td>Food &amp; Beverage Business</td><td>Upper West Side</td><td>2026-10-19</td></tr>
-<tr><td>123 Gourmet Deli Corp</td><td>off-premises</td><td>Grocery Store</td><td>East Harlem</td><td>2026-10-19</td></tr>
-<tr><td>GoPuff</td><td>off-premises</td><td>Grocery Store</td><td>Chelsea and Clinton</td><td>2026-10-16</td></tr>
-<tr><td>Fellini</td><td>on-premises</td><td>Restaurant</td><td>Greenwich Village and Soho</td><td>2026-10-16</td></tr>
-<tr><td>DAOH BROADWAY CORP.</td><td>on-premises</td><td>Food &amp; Beverage Business</td><td>Greenwich Village and Soho</td><td>2026-10-16</td></tr>
-</tbody></table>
-</main>
-<footer>
-<p>Compiled automatically from New York State Liquor Authority data via data.ny.gov. Not affiliated with the SLA.</p>
+<tr><td>Only the Wild Ones</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Food &amp; Beverage Business</td><td>Greenwich Village and Soho</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>Mesa Bar</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Food &amp; Beverage Business</td><td>Lower Manhattan</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>Langan&#x27;s Cellar</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Catering Establishment</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>Halal Cajun Platters Inc</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Food &amp; Beverage Business</td><td>Upper West Side</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>Gourmet Deli INC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v4l2 3v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9l2-3z M8 13h8"/></svg>off-premises</span></td><td>Grocery Store</td><td>East Harlem</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>GREAT PERFORMANCES/ARTISTS AS WAITRESSES, INC.</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Catering Establishment</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>Carnegie Diner &amp; Cafe</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>Cafe Fiorello, Fiorello&#x27;s</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Upper West Side</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>Blue Ribbon Sushi</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Upper East Side</td><td><span class="pill">2026-10-23</span></td></tr>
+<tr><td>West Broadway Market Inc</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v4l2 3v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9l2-3z M8 13h8"/></svg>off-premises</span></td><td>Grocery Store</td><td>Lower Manhattan</td><td><span class="pill">2026-10-22</span></td></tr>
+<tr><td>Uptown Deli + Grill</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v4l2 3v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9l2-3z M8 13h8"/></svg>off-premises</span></td><td>Grocery Store</td><td>Inwood and Washington Heights</td><td><span class="pill">2026-10-22</span></td></tr>
+<tr><td>Occhiolino 11 LLC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Lower East Side</td><td><span class="pill">2026-10-22</span></td></tr>
+<tr><td>Noona</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Food &amp; Beverage Business</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-22</span></td></tr>
+<tr><td>Felice Pasta Bar</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Gramercy Park and Murray Hill</td><td><span class="pill">2026-10-22</span></td></tr>
+<tr><td>Counter Craft LLC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Upper East Side</td><td><span class="pill">2026-10-22</span></td></tr>
+<tr><td>Lafayette One 26 LLC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Catering Establishment</td><td>Lower East Side</td><td><span class="pill">2026-10-21</span></td></tr>
+<tr><td>WatchHouse Coffee LLC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Food &amp; Beverage Business</td><td>Greenwich Village and Soho</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Slate Cafe</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Gramercy Park and Murray Hill</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Slate Cafe</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Upper West Side</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>NoMad Clubhouse</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Catering Establishment</td><td>Gramercy Park and Murray Hill</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Little Italy Pizza</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Food &amp; Beverage Business</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>LANNA CAFE INC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Lower East Side</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Johnson Pollheimer Hospitality LLC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Greenwich Village and Soho</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>II Moro NYC LLC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Upper East Side</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Dim Sum Palace</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Dim Sum Palace</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Campai LLC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Upper East Side</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Bukhara Grill</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Arte Museum New York</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Food &amp; Beverage Business</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-20</span></td></tr>
+<tr><td>Uka Omakase</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-19</span></td></tr>
+<tr><td>TSN 46th LLC; TSN 46th Operating LLC; NYCB46 Manager LLC; &amp; Acacia 46 Group Inc.</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Hotel</td><td>Chelsea and Clinton</td><td><span class="pill">2026-10-19</span></td></tr>
+<tr><td>Szechuan Gourmet</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v7a2 2 0 0 0 4 0V3 M9 10v11 M16 3c-2 1-3 4-3 7h3v11"/></svg>on-premises</span></td><td>Restaurant</td><td>Upper West Side</td><td><span class="pill">2026-10-19</span></td></tr>
+<tr><td>SHREEJI 23 INC</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v4l2 3v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9l2-3z M8 13h8"/></svg>off-premises</span></td><td>Grocery Store</td><td>Gramercy Park and Murray Hill</td><td><span class="pill">2026-10-19</span></td></tr>
+<tr><td>Harlem Shake</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0z M12 14v6 M8 21h8"/></svg>on-premises</span></td><td>Food &amp; Beverage Business</td><td>Upper West Side</td><td><span class="pill">2026-10-19</span></td></tr>
+<tr><td>123 Gourmet Deli Corp</td><td><span class="type"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v4l2 3v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9l2-3z M8 13h8"/></svg>off-premises</span></td><td>Grocery Store</td><td>East Harlem</td><td><span class="pill">2026-10-19</span></td></tr>
+</tbody></table></div>
+</div></main>
+<footer><div class="wrap prose">
+<p class="key">Compiled automatically from New York State Liquor Authority data via data.ny.gov. Not affiliated with the SLA.</p>
 <p>Pending licence applications are published on
 <a href="https://data.ny.gov/d/f8i8-k2gm">NY Open Data (dataset f8i8-k2gm)</a> under the
-<a href="https://data.ny.gov/download/77gx-ii52/application%2Fpdf">OPEN-NY terms of use</a>. Source data last updated 2026-10-22T00:32:50Z;
-page built from the snapshot of 2026-10-22.</p>
-<p>A pending application is not a licence and may be withdrawn or denied. An application is not an opening.
+<a href="https://data.ny.gov/download/77gx-ii52/application%2Fpdf">OPEN-NY terms of use</a>. Source data last updated 2026-10-25T00:32:47Z;
+page built from the snapshot of 2026-10-25. <a href="feed.xml">Licensed-venues feed (Atom)</a>.</p>
+<p>A pending application is not a licence and may be withdrawn or denied. <span class="key">An application is not an opening.</span>
 Names are shown only for business entities (trade names or registered companies); individuals' names are withheld.</p>
-</footer>
+</div></footer>
 </body></html>

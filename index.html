@@ -1,32 +1,104 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>New liquor licence applications in NYC this week | Opening Soon NYC</title>
 <meta name="description" content="New bars, restaurants and liquor stores applying for a New York State liquor licence in NYC, by borough and neighbourhood, updated from State Liquor Authority data.">
 <link rel="canonical" href="https://aurelius-enterprises.github.io/opening-soon-nyc/index.html">
 <link rel="alternate" type="application/atom+xml" title="Opening Soon NYC: licensed venues" href="feed.xml">
-<style>body{font-family:system-ui,sans-serif;max-width:60rem;margin:2rem auto;padding:0 1rem;color:#222}
-table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:.3rem .5rem;border-bottom:1px solid #ddd}
-footer{margin-top:3rem;font-size:.85rem;color:#555}nav a{margin-right:1rem}</style></head>
+<style>:root{--ink:#14122B;--page:#FBF8F3;--card:#FFFFFF;--text:#1D1B2E;--muted:#5A5670;--line:#E7E1D6;
+--zebra:#F6F1E8;--link:#B0204F;--magenta:#E2336B;--amber:#F5A524;--on-ink:#FFFFFF;--on-ink-muted:#C8C3DA;
+--shadow:0 2px 6px rgba(20,18,43,.08),0 8px 24px rgba(20,18,43,.06);
+--manhattan:#B0204F;--brooklyn:#1F5FBF;--queens:#0E7C66;--bronx:#7A1FA2;--staten-island:#B5450B}
+@media (prefers-color-scheme:dark){:root{--page:#17152A;--card:#211E38;--text:#ECE8F5;--muted:#B8B3CC;
+--line:#35314F;--zebra:#1C1A31;--link:#FF7AA2;--ink:#0D0B1E;--shadow:0 2px 8px rgba(0,0,0,.4)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--text);font:1.05rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--link)}a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 16px}
+.prose{max-width:70ch}
+.site-head{background:var(--ink);color:var(--on-ink)}
+.site-head .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 24px;padding-top:8px;padding-bottom:8px}
+.brand{color:var(--on-ink);font-weight:800;font-size:1.15rem;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.brand span{color:var(--amber)}
+nav{display:flex;flex-wrap:wrap;gap:0 4px}
+nav a{color:var(--on-ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px;padding:0 10px;border-radius:8px}
+nav a:hover{background:rgba(255,255,255,.1)}
+.hero{background:var(--ink);color:var(--on-ink);padding:24px 0 40px}
+.hero .wrap{display:grid;gap:24px;align-items:center}
+@media (min-width:760px){.hero .wrap{grid-template-columns:1.2fr 1fr}}
+.hero h1{font-size:clamp(2.2rem,6vw,3rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px}
+.hero p{margin:0 0 8px;color:var(--on-ink-muted)}.hero .promise{color:var(--on-ink);font-size:1.25rem}
+.hero .big{font-size:3rem;font-weight:800;color:var(--amber);line-height:1;font-variant-numeric:tabular-nums}
+.hero svg{width:100%;height:auto;max-width:440px}
+.title-band{background:var(--ink);color:var(--on-ink);padding:16px 0 32px}
+.title-band h1{font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.15;margin:0}
+main{padding:32px 0 48px}
+h2{font-size:1.5rem;line-height:1.25;margin:40px 0 16px}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));padding:0;margin:0;list-style:none}
+.card{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:16px;border-top:8px solid var(--c,var(--magenta))}
+.card a.name{font-weight:700;font-size:1.1rem;display:inline-flex;min-height:44px;align-items:center}
+.card .num{font-size:2.6rem;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.card .win{color:var(--muted);font-size:.95rem;margin:4px 0 8px}
+.badge{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.85rem;font-weight:700}
+.badge.new{background:var(--amber);color:#14122B}
+.badge.boro{background:var(--c);color:#fff}
+.map{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:16px;max-width:520px}
+.map svg{width:100%;height:auto}.map a:focus-visible path{stroke:var(--amber);stroke-width:4}
+.map text{font:700 15px system-ui,sans-serif;fill:#fff}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:12px;box-shadow:var(--shadow);background:var(--card);max-height:80vh}
+table{border-collapse:collapse;width:100%;font-size:.98rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{position:sticky;top:0;background:var(--ink);color:var(--on-ink);font-weight:700;white-space:nowrap}
+th a{color:var(--on-ink)}
+tbody tr:nth-child(even){background:var(--zebra)}
+.type{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.type svg{width:20px;height:20px;flex:none}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 10px;white-space:nowrap;background:var(--page)}
+.pricing{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));max-width:44rem}
+.price-card{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:24px;border-top:8px solid var(--magenta)}
+.price-card h3{margin:0 0 8px;font-size:1.2rem}.price-card .amt{font-size:1.8rem;font-weight:800}
+button[disabled]{margin-top:16px;min-height:44px;padding:0 20px;border-radius:999px;border:2px solid var(--muted);
+background:transparent;color:var(--muted);font:inherit;font-weight:700;cursor:not-allowed}
+footer{background:var(--ink);color:var(--on-ink-muted);padding:32px 0;font-size:.95rem}
+footer a{color:var(--on-ink)}footer .key{color:var(--on-ink);font-weight:700;font-size:1.02rem}</style></head>
 <body>
-<header><p><a href="index.html"><strong>Opening Soon NYC</strong></a></p>
-<nav><a href="manhattan.html">Manhattan</a><a href="brooklyn.html">Brooklyn</a><a href="queens.html">Queens</a><a href="bronx.html">Bronx</a><a href="staten-island.html">Staten Island</a><a href="licensed.html">Licensed</a></nav></header>
-<main>
-<h1>New liquor licence applications in NYC this week</h1>
-<p>New liquor licence applications across New York City, a few weeks before the doors open.</p><p>Applications <strong>filed in the last 7 days</strong> (2026-10-16 to 2026-10-22), by filing date. Restaurants, bars and other on-premises venues, plus liquor, wine and grocery stores (off-premises).</p><p>Queens, the Bronx and Staten Island pages cover the last 30 days.</p><ul>
-<li><a href="manhattan.html">Manhattan</a>: 23 filings (last 7 days)</li>
-<li><a href="brooklyn.html">Brooklyn</a>: 18 filings (last 7 days)</li>
-<li><a href="queens.html">Queens</a>: 41 filings (last 30 days)</li>
-<li><a href="bronx.html">Bronx</a>: 17 filings (last 30 days)</li>
-<li><a href="staten-island.html">Staten Island</a>: 7 filings (last 30 days)</li>
-</ul><p><a href="licensed.html">Newly licensed venues</a> (0) and the <a href="weekly/2026-W43.html">weekly summary for 2026-W43</a>.</p><p>57 applications are new or changed since the previous snapshot.</p><p><strong>Daily alerts, same-day data:</strong> New York City $49/month or $470/year; New York State $129/month or $1,240/year. Subscriptions open soon.</p>
-</main>
-<footer>
-<p>Compiled automatically from New York State Liquor Authority data via data.ny.gov. Not affiliated with the SLA.</p>
+<header class="site-head"><div class="wrap"><a class="brand" href="index.html">Opening <span>Soon</span>&nbsp;NYC</a>
+<nav><a href="manhattan.html">Manhattan</a><a href="brooklyn.html">Brooklyn</a><a href="queens.html">Queens</a><a href="bronx.html">Bronx</a><a href="staten-island.html">Staten Island</a><a href="licensed.html">Licensed</a></nav></div></header>
+<section class="hero"><div class="wrap"><div><h1>New liquor licence applications in NYC this week</h1><p class="promise">New bars and restaurants, weeks before they open.</p><p><span class="big">80</span> filings in the last 7 days across the five boroughs</p><p>Updated 2026-10-25, from the State's daily data. An application is not an opening.</p></div><svg viewBox="0 0 440 260" role="img" aria-label="Illustration: a city skyline at night with a glowing Opening Soon sign">
+<rect width="440" height="260" rx="16" fill="#1E1B3D"/>
+<circle cx="370" cy="48" r="20" fill="#F5A524" opacity=".9"/>
+<g fill="#2C2858"><rect x="10" y="120" width="44" height="140"/><rect x="60" y="90" width="36" height="170"/>
+<rect x="300" y="100" width="40" height="160"/><rect x="346" y="130" width="48" height="130"/><rect x="398" y="80" width="34" height="180"/></g>
+<g fill="#3A356F"><rect x="30" y="160" width="40" height="100"/><rect x="250" y="140" width="56" height="120"/><rect x="320" y="170" width="44" height="90"/></g>
+<g fill="#F5A524" opacity=".75"><rect x="68" y="104" width="6" height="8"/><rect x="82" y="104" width="6" height="8"/><rect x="68" y="124" width="6" height="8"/>
+<rect x="82" y="144" width="6" height="8"/><rect x="310" y="114" width="6" height="8"/><rect x="324" y="134" width="6" height="8"/><rect x="406" y="96" width="6" height="8"/>
+<rect x="418" y="116" width="6" height="8"/><rect x="406" y="156" width="6" height="8"/><rect x="20" y="140" width="6" height="8"/></g>
+<rect x="104" y="150" width="140" height="110" fill="#2C2858"/>
+<rect x="112" y="40" width="124" height="20" rx="4" fill="none"/>
+<rect x="96" y="56" width="156" height="78" rx="14" fill="#14122B" stroke="#E2336B" stroke-width="5"/>
+<rect x="104" y="64" width="140" height="62" rx="9" fill="none" stroke="#E2336B" stroke-width="1.5" opacity=".6"/>
+<text x="174" y="91" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="22" fill="#FF7AA2" letter-spacing="2">OPENING</text>
+<text x="174" y="117" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="22" fill="#F5A524" letter-spacing="6">SOON</text>
+<path d="M140 134v16M208 134v16" stroke="#E2336B" stroke-width="3"/>
+<g fill="#F5A524"><rect x="120" y="170" width="24" height="30" rx="3"/><rect x="162" y="170" width="24" height="30" rx="3" opacity=".5"/><rect x="204" y="170" width="24" height="30" rx="3"/></g>
+<rect x="160" y="214" width="28" height="46" fill="#14122B"/><rect x="0" y="252" width="440" height="8" fill="#14122B"/>
+</svg></div></section>
+<main><div class="wrap">
+<div class="prose"><p>New liquor licence applications across New York City, a few weeks before the doors open.</p><p>Applications <strong>filed in the last 7 days</strong> (2026-10-19 to 2026-10-25), by filing date. Restaurants, bars and other on-premises venues, plus liquor, wine and grocery stores (off-premises).</p><p>Queens, the Bronx and Staten Island pages cover the last 30 days.</p></div><h2>By borough</h2><ul class="cards">
+<li class="card" style="--c:var(--manhattan)"><a class="name" href="manhattan.html">Manhattan</a><div class="num">35</div><div class="win">filings, last 7 days</div><span class="badge" style="padding-left:0">No change since last snapshot</span></li>
+<li class="card" style="--c:var(--brooklyn)"><a class="name" href="brooklyn.html">Brooklyn</a><div class="num">25</div><div class="win">filings, last 7 days</div><span class="badge" style="padding-left:0">No change since last snapshot</span></li>
+<li class="card" style="--c:var(--queens)"><a class="name" href="queens.html">Queens</a><div class="num">40</div><div class="win">filings, last 30 days</div><span class="badge" style="padding-left:0">No change since last snapshot</span></li>
+<li class="card" style="--c:var(--bronx)"><a class="name" href="bronx.html">Bronx</a><div class="num">19</div><div class="win">filings, last 30 days</div><span class="badge" style="padding-left:0">No change since last snapshot</span></li>
+<li class="card" style="--c:var(--staten-island)"><a class="name" href="staten-island.html">Staten Island</a><div class="num">6</div><div class="win">filings, last 30 days</div><span class="badge" style="padding-left:0">No change since last snapshot</span></li>
+</ul><h2>Where the filings are</h2><div class="map"><svg viewBox="0 0 420 380" role="img" aria-label="Schematic map of the five boroughs, shaded by number of recent filings"><a href="manhattan.html" aria-label="Manhattan: 35 filings"><path d="M206 40 L224 46 L214 150 L196 196 L184 190 L192 120 Z" fill="#B0204F" fill-opacity="0.93" stroke="#FFFFFF" stroke-width="2"/><text x="164" y="120" text-anchor="middle">Manhattan</text><text x="164" y="140" text-anchor="middle">35</text></a><a href="brooklyn.html" aria-label="Brooklyn: 25 filings"><path d="M196 214 L248 184 L264 236 L300 266 L262 318 L196 322 L168 282 Z" fill="#1F5FBF" fill-opacity="0.79" stroke="#FFFFFF" stroke-width="2"/><text x="226" y="270" text-anchor="middle">Brooklyn</text><text x="226" y="290" text-anchor="middle">25</text></a><a href="queens.html" aria-label="Queens: 40 filings"><path d="M262 124 L340 112 L396 150 L390 236 L318 262 L268 228 L250 174 Z" fill="#0E7C66" fill-opacity="1.0" stroke="#FFFFFF" stroke-width="2"/><text x="322" y="186" text-anchor="middle">Queens</text><text x="322" y="206" text-anchor="middle">40</text></a><a href="bronx.html" aria-label="Bronx: 19 filings"><path d="M226 22 L300 18 L330 60 L312 104 L262 112 L236 84 Z" fill="#7A1FA2" fill-opacity="0.71" stroke="#FFFFFF" stroke-width="2"/><text x="276" y="66" text-anchor="middle">Bronx</text><text x="276" y="86" text-anchor="middle">19</text></a><a href="staten-island.html" aria-label="Staten Island: 6 filings"><path d="M40 282 L110 262 L140 304 L118 356 L60 364 L30 326 Z" fill="#B5450B" fill-opacity="0.53" stroke="#FFFFFF" stroke-width="2"/><text x="84" y="316" text-anchor="middle">Staten Is.</text><text x="84" y="336" text-anchor="middle">6</text></a></svg></div><h2>More</h2><p><a href="licensed.html">Newly licensed venues</a> (0) and the <a href="weekly/2026-W43.html">weekly summary for 2026-W43</a>.</p><section aria-labelledby="pricing"><h2 id="pricing">Daily alerts, same-day data</h2><div class="pricing"><div class="price-card"><h3>New York City</h3><div class="amt">$49/month</div><div>or $470/year</div><button type="button" disabled>Subscriptions open soon</button></div><div class="price-card"><h3>New York State</h3><div class="amt">$129/month</div><div>or $1,240/year</div><button type="button" disabled>Subscriptions open soon</button></div></div><div class="prose"><p><strong>Daily alerts, same-day data:</strong> New York City $49/month or $470/year; New York State $129/month or $1,240/year. Subscriptions open soon.</p></div></section>
+</div></main>
+<footer><div class="wrap prose">
+<p class="key">Compiled automatically from New York State Liquor Authority data via data.ny.gov. Not affiliated with the SLA.</p>
 <p>Pending licence applications are published on
 <a href="https://data.ny.gov/d/f8i8-k2gm">NY Open Data (dataset f8i8-k2gm)</a> under the
-<a href="https://data.ny.gov/download/77gx-ii52/application%2Fpdf">OPEN-NY terms of use</a>. Source data last updated 2026-10-22T00:32:50Z;
-page built from the snapshot of 2026-10-22.</p>
-<p>A pending application is not a licence and may be withdrawn or denied. An application is not an opening.
+<a href="https://data.ny.gov/download/77gx-ii52/application%2Fpdf">OPEN-NY terms of use</a>. Source data last updated 2026-10-25T00:32:47Z;
+page built from the snapshot of 2026-10-25. <a href="feed.xml">Licensed-venues feed (Atom)</a>.</p>
+<p>A pending application is not a licence and may be withdrawn or denied. <span class="key">An application is not an opening.</span>
 Names are shown only for business entities (trade names or registered companies); individuals' names are withheld.</p>
-</footer>
+</div></footer>
 </body></html>
