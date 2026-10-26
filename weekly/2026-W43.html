@@ -50,6 +50,11 @@ table{border-collapse:collapse;width:100%;font-size:.98rem;font-variant-numeric:
 th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 th{position:sticky;top:0;background:var(--ink);color:var(--on-ink);font-weight:700;white-space:nowrap}
 th a{color:var(--on-ink)}
+@media (max-width:40rem){table.stack thead{position:absolute;left:-9999px}
+table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}
+table.stack tr{padding:8px 0}table.stack td{border:0;padding:3px 12px}
+table.stack td::before{content:attr(data-label);display:block;color:var(--muted);font-size:.8rem;font-weight:700}
+.scroll:has(table.stack){max-height:none}}
 tbody tr:nth-child(even){background:var(--zebra)}
 .type{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 .type svg{width:20px;height:20px;flex:none}
@@ -60,7 +65,7 @@ tbody tr:nth-child(even){background:var(--zebra)}
 button[disabled]{margin-top:16px;min-height:44px;padding:0 20px;border-radius:999px;border:2px solid var(--muted);
 background:transparent;color:var(--muted);font:inherit;font-weight:700;cursor:not-allowed}
 footer{background:var(--ink);color:var(--on-ink-muted);padding:32px 0;font-size:.95rem}
-footer a{color:var(--on-ink)}footer .key{color:var(--on-ink);font-weight:700;font-size:1.02rem}</style></head>
+footer a{color:var(--on-ink)}footer .key{color:var(--on-ink);font-weight:700;font-size:1.02rem}</style><script src="../count.js" data-goatcounter="https://openingsoonnyc.goatcounter.com/count" defer></script></head>
 <body>
 <header class="site-head"><div class="wrap"><a class="brand" href="../index.html">Opening <span>Soon</span>&nbsp;NYC</a>
 <nav><a href="../manhattan.html">Manhattan</a><a href="../brooklyn.html">Brooklyn</a><a href="../queens.html">Queens</a><a href="../bronx.html">Bronx</a><a href="../staten-island.html">Staten Island</a><a href="../licensed.html">Licensed</a></nav></div></header>
